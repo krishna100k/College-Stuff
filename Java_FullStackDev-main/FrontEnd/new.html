@@ -1,0 +1,54 @@
+<!-- basics of css -->
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+        <link rel="icon" href="logo.jpg">
+        <style>
+            h1{
+                color: red;
+
+            }
+
+            /* class selector */
+            .mycls{
+                color: black;
+                background-color: aliceblue;
+            }
+
+            /* id selector */
+            #myid{
+                color: navy;
+                text-shadow: -3px -3px 2px yellow;
+            }
+
+        
+            .btn{
+                color: lime;
+                background-color: darkgreen;
+                border: none;
+                border-radius: 5px;
+                padding: 9px 15px;
+                /*padding-top: 10px;*/
+                cursor: pointer;
+                font: bold 12px Arial;
+
+            }
+
+            .btn:hover{
+                background-color: lime;
+                color: darkgreen;
+                box-shadow: 3px 3px 3px yellow;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Index Page</h1>
+        <h1 class = 'mycls'>Class</h1>
+        <h1 class = 'mycls' id = "myid">This is ID</h1>
+        <input type="button" value="Login" class="btn">
+    </body>
+</html>

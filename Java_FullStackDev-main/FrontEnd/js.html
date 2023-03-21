@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            JavaScript
+        </title>
+        <script>
+            console.log("Hello");
+            console.log("JavaScript")
+
+            var a = "Hii";
+            console.log(a);
+
+            var b = 2;
+            console.log(b);
+
+            var c = 3.14;
+            console.log(c);
+
+            var d = true;
+            console.log(d);
+
+            //normal function
+            function m1(){
+                console.log("M1 function called");
+            }
+            m1();
+
+            //parameterized function
+            function add(x,y){
+                z = x+y;
+                console.log("Addition is: ",z);
+            }
+            add(2,4);
+
+
+            function sum(x,y){
+                var z = x+y;
+                return z;
+            }
+            var total = sum(180,100);
+            console.log(total);
+
+            console.log(sum(180,100));
+
+            function onBtn(){
+                console.log("Button Clicked");
+            }
+
+            function textInput(){
+                var intxt = document.getElementById("txt").value;
+                console.log(intxt);
+                document.getElementById("demo").innerHTML = intxt;
+                document.getElementById("demo").style.color = "brown";
+                document.getElementById("demo").style.textShadow = "3px 3px 3px yellow"
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Click Here!!" onclick="onBtn()">
+        <br><br>
+        <input type="text" id="txt" oninput="textInput()">
+        <input type="button" value="Get Input" onClick="textInput()">
+        <h3 id="demo"></h3>
+    </body>
+</html>
